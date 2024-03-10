@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="./assets/images/1311.png" />
+		<title>DinhPhiHung Portfolio</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">DinhPhiHung</span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" href="mailto:xzeo1123@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <!-- 
+            TODO
+
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+          <img src="./assets/images/1311.png" class="portfolio-header-image">
+          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+            <span class="image-caption">Dinh Phi Hung image</span>
+          </a>
+        </div>
+
+          <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Trang của Đinh Phi Hùng</span>
+              <div class="body-text">Tôi là 1 sinh viên còn đang học tại trường Đại học Sài Gòn
+                Ngành CNTT - Chuyên ngành KTPM
+              </div>
+            </div>
+            <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="about-section">
+        <span class="subheader-text">My Background / About Me</span>
+        <div class="about-section-content">
+          <div class="body-text">Xin chào, tôi là một sinh viên năm hai đam mê khám phá về công nghệ thông tin, đặc biệt là trong lĩnh vực kỹ thuật phần mềm. Tôi luôn hứng thú và không ngừng học hỏi về các ngôn ngữ lập trình, công cụ phát triển phần mềm và các phương pháp thiết kế hệ thống. Với niềm đam mê này, tôi đã tham gia vào nhiều dự án thực tế, từ việc phát triển ứng dụng di động đến xây dựng hệ thống phần mềm phức tạp. Tôi tin rằng sự học hỏi liên tục và trải nghiệm thực tiễn sẽ giúp tôi trở thành một chuyên gia trong lĩnh vực này và đóng góp vào sự phát triển của ngành công nghệ thông tin.</div>
+          <div class="body-text">Bên cạnh việc học hỏi và rèn luyện kỹ năng, tôi cũng cam kết sẽ cống hiến cho tương lai bằng cách tham gia vào các dự án và nghiên cứu có ý nghĩa. Tôi mong muốn áp dụng những kiến thức và kỹ năng của mình vào việc tạo ra các sản phẩm công nghệ thông tin có thể giải quyết các vấn đề thực tế và mang lại giá trị cho cộng đồng. Sự sáng tạo và cam kết của tôi sẽ được thể hiện qua việc không ngừng nỗ lực để đóng góp vào sự phát triển bền vững của ngành công nghệ thông tin và xã hội.
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">My Work / My Projects</span>
+
+        <div class="projects-container">
+          <!-- 
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+          <div class="project-card">
+            <img src="./assets/images/j2ee.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">J2EE</div>
+              <div class="body-text project-card-text">Đây là sản phẩm đầu tay cho công nghệ j2ee với đề tài về mạng xã hội sẽ giúp ích cho những người đang tìm hiểu có thể xem tham khảo</div>
+            </div>
+            <a class="button" href="https://github.com/xzeo1123/J2EE">
+              <span class="button-text">View source</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/c.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">MVC Project using architech 2020 version</div>
+              <div class="body-text project-card-text">Sản phẩm phần mềm C-Sharp ứng dụng công nghệ mô hình MVC theo kiến trúc 2020 trong đề tài app bán hàng</div>
+            </div>
+            <a class="button" href="https://github.com/xzeo1123/MVC2020">
+              <span class="button-text">View source</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://github.com/xzeo1123">
+        <image src="./assets/icons/github.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="https://www.facebook.com/profile.php?id=100011870896039">
+        <image src="./assets/icons/2023_Facebook_icon.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" href="mailto:xzeo1123@gmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
